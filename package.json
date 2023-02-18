@@ -1,0 +1,18 @@
+{
+  "name": "script",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node ./script.ts",
+    "database:start": "docker compose -f docker-compose.yml up -d",
+    "database:migrate": "npx prisma migrate dev"
+  },
+  "dependencies": {
+    "@prisma/client": "4.10.1",
+    "@types/node": "18.14.0"
+  },
+  "devDependencies": {
+    "prisma": "4.10.1",
+    "ts-node": "10.9.1",
+    "typescript": "4.9.5"
+  }
+}
